@@ -1,0 +1,52 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    int m,s,e,h,c,sum;
+	    int per;
+	    String name;
+	    Scanner sc= new Scanner(System.in);
+		    System.out.println("Enter the details of the student:");
+		    System.out.println("Enter NAME  of the student = ");
+		    name=sc.nextLine();
+		    System.out.println("Enter marks out of 100 in Maths ");
+		    m=sc.nextInt();
+		    System.out.println("Enter marks out of 100 in Science ");
+		    s=sc.nextInt();
+		    System.out.println("Enter marks out of 100 in English ");
+		    e=sc.nextInt();
+		    System.out.println("Enter marks out of 100 in Hindi ");
+		    h=sc.nextInt();
+		    System.out.println("Enter marks out of 100 in Culture ");
+		    c=sc.nextInt();
+		 
+		 sum=m+s+e+h+c; 
+		 per=sum*100/500;
+		    
+		    
+		System.out.println("Details of ths student name:"+name);
+        System.out.println("Marks in Maths "+m);
+        System.out.println("Marks in Science "+s);
+        System.out.println("Marks in Englis "+e);
+        System.out.println("Marks in Hindi "+h);
+        System.out.println("Marks in Culture "+c);
+        System.out.println("Total marks of the Student = "+sum);
+		System.out.println("Percentage of the Student = "+per);
+		if(per>90){
+		    System.out.println("Student have got 'A+' Grade");
+		}
+		else if(per>75){
+		    System.out.println("Student have got 'A' Grade");
+		}
+		else if(per>60){
+		    System.out.println("Student have got 'B' Grade");
+		}
+		else if(per>45){
+		    System.out.println("Student have got 'c' Grade");
+		}
+		else if(per<45){
+		    System.out.println("Student is failed in the exam");
+		}
+	}
+}
+
