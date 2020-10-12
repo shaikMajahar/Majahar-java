@@ -1,0 +1,48 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int d,m,y,sal,asal,tax,age;
+	    String name;
+	    System.out.println("Enter the details of the Employee : ");
+	    System.out.println("Enter name of the employee : ");
+	    name=sc.nextLine();
+	    System.out.println("Date of Birth");
+	    d=sc.nextInt();
+	     System.out.println("Month of Birth");
+	    m=sc.nextInt();
+	     System.out.println("Year of Birth");
+	    y=sc.nextInt();
+	    System.out.println("Enter the Salary of the Employee : ");
+	    sal=sc.nextInt();
+		asal=sal*12;
+		age=2020-y;
+		System.out.println("Name of the Employee is "+name);
+	    System.out.println("Age of the Employee is "+age);
+	    System.out.println("The Anual Salary of the employee is "+asal);
+		
+		if(asal>500000){
+		    tax=asal*20/100;
+		    System.out.println("Tax for the Emplyee is "+tax);
+		}
+		 else if(asal>400000){
+		    tax=asal*15/100;
+		    System.out.println("Tax for the Emplyee is "+tax);
+		}
+		else if(asal>300000){
+		    tax=asal*10/100;
+		    System.out.println("Tax for the Emplyee is "+tax);
+		}
+		else if(asal>200000){
+		    tax=asal*5/100;
+		    System.out.println("Tax for the Emplyee is "+tax);
+		}
+		else {
+		    System.out.println("Their is no Tax for this employee");
+		}
+		
+	
+	}
+}
+
