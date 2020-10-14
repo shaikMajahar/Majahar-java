@@ -1,0 +1,40 @@
+//Day 4 assignment 1
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Avengers[] avenger=new Avengers[5];
+		for(int i=0;i<5;i++){
+		    avenger[i]=new Avengers();
+		    avenger[i].getdetails();
+		    avenger[i].displaydetails();
+		}
+	}
+}
+
+ class Avengers{
+    public String name,power,weapon,planet;
+    public int age;
+    Scanner sc=new Scanner(System.in);
+    public void getdetails(){
+        System.out.println("<~~~~~~~~~~Enter The details of the avenger~~~~~~~~>");
+        System.out.println("Enter the name : ");
+        name=sc.nextLine();
+        System.out.println("Enter age : ");
+        age=sc.nextInt();
+        System.out.println("Enter power of the avenger : ");
+        power=sc.next();
+        System.out.println("Enter weapon name : ");
+        weapon=sc.next();
+        System.out.println("Enter Planat name : ");
+        planet=sc.next();
+    }
+    public void displaydetails(){
+        System.out.println("<~~~~~~~~~~~~Details of the avenger~~~~~~~~~~>");
+        System.out.println("Name : "+name);
+        System.out.println("Age : "+age);
+        System.out.println("Power : "+power);
+        System.out.println("Weapon : "+weapon);
+        System.out.println("Planet : "+planet);
+    }
+}
